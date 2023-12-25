@@ -4,7 +4,6 @@
 
 ul {
   list-style-type: none;
-  padding-left: 0;
 }
 
 img {
@@ -23,7 +22,6 @@ img {
   align-content: center;
   align-items: center;
   gap: 24px;
-  margin: 0 auto;
   background-color: #fff;
 }
 
