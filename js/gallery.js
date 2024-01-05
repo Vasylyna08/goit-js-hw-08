@@ -93,7 +93,7 @@ function handleImageClick(event) {
     return;
   }
   const instance = basicLightbox.create(
-    `<img class="image-original" src="${event.target.dataset.source}" alt="${event.target.dataset.alt} width="800"
+    `<img class="image-original" src="${event.target.dataset.source}" alt="${event.target.alt}" width="800"
   height="600">`,
     {
       onShow: () => {
@@ -104,11 +104,11 @@ function handleImageClick(event) {
       },
     }
   );
-  instance.show();
 
   function closeModalImg(event) {
     if (event.code === 'Escape') {
       instance.close();
     }
   }
+  instance.show();
 }
